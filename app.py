@@ -10,6 +10,7 @@ db = JSONStore(cfg.db_file)
 
 # App title and layout
 st.set_page_config(page_title=cfg.app_name, layout="wide")
+
 st.title(cfg.app_name)
 
 # Sidebar: project management and navigation
