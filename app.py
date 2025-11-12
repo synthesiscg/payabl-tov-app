@@ -1,5 +1,4 @@
 import streamlit as st
-from pathlib import Path
 from config.config import get_config
 from storage.json_store import JSONStore
 from ui.screens import editor as editor_screen

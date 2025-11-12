@@ -13,6 +13,7 @@ class AppConfig(BaseModel):
     app_name: str = "TOV Copywriter"
     data_dir: Path = PROJECT_ROOT / "data"
     db_file: Path = PROJECT_ROOT / "data" / "app_state.json"
+    primary_color: str = "#323FF6"
 
     # OpenAI
     openai_api_key: Optional[str] = os.getenv("OPENAI_API_KEY")

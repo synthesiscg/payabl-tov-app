@@ -1,12 +1,22 @@
 ## TOV Copywriter
 
 ### Setup
-1. Create and activate a virtual env (optional).
-2. Install deps:
+1. Create and activate a virtual environment
+   - macOS/Linux:
 ```bash
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install --upgrade pip
 pip install -r requirements.txt
 ```
-3. Create `.env` with your OpenAI key:
+   - Windows (PowerShell):
+```powershell
+py -m venv .venv
+.\.venv\Scripts\Activate.ps1
+python -m pip install --upgrade pip
+pip install -r requirements.txt
+```
+2. Create `.env` with your OpenAI key:
 ```env
 OPENAI_API_KEY=sk-...
 # Optional: override model
